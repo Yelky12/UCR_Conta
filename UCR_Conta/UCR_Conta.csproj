@@ -189,6 +189,12 @@
     <Compile Include="Formas\FInfEstResultado.Designer.cs">
       <DependentUpon>FInfEstResultado.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formas\FLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\FLogIn.Designer.cs">
+      <DependentUpon>FLogIn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formas\FManArticulos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +230,12 @@
     </Compile>
     <Compile Include="Formas\FManTercero.Designer.cs">
       <DependentUpon>FManTercero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\FManUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\FManUsuarios.Designer.cs">
+      <DependentUpon>FManUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Formas\FPorcentaje.cs">
       <SubType>Form</SubType>
@@ -276,6 +288,9 @@
     <EmbeddedResource Include="Formas\FInfEstResultado.resx">
       <DependentUpon>FInfEstResultado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formas\FLogIn.resx">
+      <DependentUpon>FLogIn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formas\FManArticulos.resx">
       <DependentUpon>FManArticulos.cs</DependentUpon>
     </EmbeddedResource>
@@ -293,6 +308,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formas\FManTercero.resx">
       <DependentUpon>FManTercero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\FManUsuarios.resx">
+      <DependentUpon>FManUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formas\FPorcentaje.resx">
       <DependentUpon>FPorcentaje.cs</DependentUpon>

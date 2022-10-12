@@ -36,11 +36,13 @@ namespace UCR_Conta
             this.btnTercero = new System.Windows.Forms.Button();
             this.btnVentas = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnUsuarios = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
             this.btnCentCosto = new System.Windows.Forms.Button();
             this.btnMac = new System.Windows.Forms.Button();
             this.btnAsiento = new System.Windows.Forms.Button();
             this.btnConfigServ = new System.Windows.Forms.Button();
+            this.btnLogIn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -112,6 +114,8 @@ namespace UCR_Conta
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnLogIn);
+            this.panel1.Controls.Add(this.btnUsuarios);
             this.panel1.Controls.Add(this.btnReportes);
             this.panel1.Controls.Add(this.btnCentCosto);
             this.panel1.Controls.Add(this.btnMac);
@@ -128,6 +132,17 @@ namespace UCR_Conta
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(499, 392);
             this.panel1.TabIndex = 6;
+            // 
+            // btnUsuarios
+            // 
+            this.btnUsuarios.Location = new System.Drawing.Point(180, 91);
+            this.btnUsuarios.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.Size = new System.Drawing.Size(146, 32);
+            this.btnUsuarios.TabIndex = 11;
+            this.btnUsuarios.Text = "Usuarios";
+            this.btnUsuarios.UseVisualStyleBackColor = true;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // btnReportes
             // 
@@ -184,6 +199,17 @@ namespace UCR_Conta
             this.btnConfigServ.UseVisualStyleBackColor = true;
             this.btnConfigServ.Click += new System.EventHandler(this.btnConfigServ_Click);
             // 
+            // btnLogIn
+            // 
+            this.btnLogIn.Location = new System.Drawing.Point(180, 127);
+            this.btnLogIn.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLogIn.Name = "btnLogIn";
+            this.btnLogIn.Size = new System.Drawing.Size(146, 32);
+            this.btnLogIn.TabIndex = 12;
+            this.btnLogIn.Text = "LogIn";
+            this.btnLogIn.UseVisualStyleBackColor = true;
+            this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -212,6 +238,8 @@ namespace UCR_Conta
         private System.Windows.Forms.Button btnMac;
         private System.Windows.Forms.Button btnCentCosto;
         private System.Windows.Forms.Button btnReportes;
+        private System.Windows.Forms.Button btnUsuarios;
+        private System.Windows.Forms.Button btnLogIn;
     }
 }
 

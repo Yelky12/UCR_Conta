@@ -174,6 +174,15 @@ namespace ClaseEntidades
     }
 
 
+    public static class clsUsuarios
+    {
+        public static int Usuarios_ID { get; set; }
+        public static string Usuarios_Usuario { get; set; }
+        public static string Usuarios_Clave { get; set; }
+        public static string Usuarios_TipoUsuario { get; set; }
+        public static int Usuarios_Estado { get; set; }
+    }
+
 
 
     public static class ClaseEnt

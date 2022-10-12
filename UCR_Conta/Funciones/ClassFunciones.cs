@@ -229,6 +229,11 @@ namespace ClaseFunciones
                           $"'{ClaseEntidades.clsConfgEstResul.clsConfgEstResul_Naturaleza}', '{ClaseEntidades.clsConfgEstResul.clsConfgEstResul_Empresa}')";
                     break;
 
+                case "IUS"://Insertar Usuarios
+                    sql = $"INSERT INTO Usuarios ( Usuarios_Usuario, Usuarios_Clave, Usuarios_TipoUsuario,Usuarios_Estado) VALUES ('" +
+                          $"{ClaseEntidades.clsUsuarios.Usuarios_Usuario}','{ClaseEntidades.clsUsuarios.Usuarios_Clave}','{ClaseEntidades.clsUsuarios.Usuarios_TipoUsuario}','{ClaseEntidades.clsUsuarios.Usuarios_Estado}')";
+                    break;
+
 
             }
             clsConexiones.EjecutaQuery(sql);
@@ -309,6 +314,10 @@ namespace ClaseFunciones
 
                 case "OIA"://Obtener Impuesto Articulo
                     sql = $"select STR(Articulos_Impuesto, 25, 2)  from Articulos where Articulos_ID ={ ClaseEntidades.clsArticulos.Articulos_ID}";
+                    break;
+
+                case "OUT": //Obtener Usuario y Tipo
+                    sql = $"select Usuarios_Usuario + '-' + Usuarios_TipoUsuario from Usuarios where Usuarios_Usuario = '{ClaseEntidades.clsUsuarios.Usuarios_Usuario}' and Usuarios_Clave = '{ClaseEntidades.clsUsuarios.Usuarios_Clave}'";
                     break;
 
             }

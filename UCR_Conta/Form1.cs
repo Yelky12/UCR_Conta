@@ -90,5 +90,17 @@ namespace UCR_Conta
             FReportesPrincipal frm = new FReportesPrincipal();
             frm.Show();
         }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            FManUsuarios frm = new FManUsuarios();
+            frm.Show();
+        }
+
+        private void btnLogIn_Click(object sender, EventArgs e)
+        {
+            FLogIn frm = new FLogIn();
+            frm.Show();
+        }
     }
 }
